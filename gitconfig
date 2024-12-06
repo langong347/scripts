@@ -1,0 +1,19 @@
+[user]
+    name = yourname
+    email = youremailaddress
+[core]
+    editor = vim
+[push]
+    default = upstream
+[merge]
+    conflictstyle = diff3
+[credential]
+    helper = XXXXXX  # this option differs for Mac and Linux, google how to manage git credentials
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    lg = log --oneline
+[init]
+    defaultBranch = main

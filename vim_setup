@@ -39,7 +39,8 @@ nnoremap <c-k> <c-u>
 nnoremap <space> za
 
 " Remove trailing whitespace on save for the specified file types
-autocmd FileType python autocmd BufWritePre *.py %s/\s\+$//e
+" autocmd FileType python autocmd BufWritePre *.py %s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Config Vundle
 set nocompatible              " be iMproved, required
